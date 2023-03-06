@@ -20,6 +20,7 @@
   - `meta` is a _self-closing element_, meaning it does not have a closing tag
 
 **Bonus elements**
+
 Styling
 - `strong` - Used to bold text
 - `em` - Used to italicizse text
