@@ -42,6 +42,8 @@ Non-semantic
 
 Anchor
 - `a` - Used with `href` attribute to include a hyperlink e.g `<a href="https://launchschool.com">Hyper-link text goe here</a>`
+  - Can add attribute `target="_blank"` to open the link in a new tab
+  - e.g `<a href="https://launchschool.com" target="_blank">Hyper-link text goe here</a>`
 
 ## Classes, IDs, and Names ##
 These are the three ways to identify certain elements in HTML
@@ -128,4 +130,44 @@ Cascading style sheets is used to style HTML
 - External
 ```html
 <head> <link rel="stylesheet" href="/filepath"> </head>
+```
+
+### Nested selections ###
+Select the orange on the fancy plate:
+- `#fancy orange`
+
+Select the oranges in the bentos:
+- `bento orange`
+
+Select the small oranges:
+- `orange.small`
+
+Select the small organes in the bentos:
+- `bento orange.small`
+
+Select all of the plates and bentos
+- `plate, bento`
+
+Select everything on a plate:
+- `plate *`
+
+Select every plate that directly follow a bento
+- `plate + bento`
+
+Select all plates that follow a bento
+- `plate ~ bento`
+
+<div class="table">
+  <apple />
+  <apple class="small" />
+  <bento>
+    <orange class="small" />
+  </bento>
+  <plate id="fancy">
+    <orange />
+  </plate>
+  <plate>
+    <orange class="small" />
+  </plate>
+</div>
 ```
