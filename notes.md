@@ -35,8 +35,10 @@ Semantic
 - `address` - An address for a location
 - `pre` - Signifies some sort of pre-formatting
 - `aside` - Sidebar comments, pullquote, gloasary, footnote, advertising, tangentially related
+
 Non-semantic
 - `div` - Flow content with no additional semantics
+
 Anchor
 - `a` - Used with `href` attribute to include a hyperlink e.g `<a href="https://launchschool.com">Hyper-link text goe here</a>`
 
