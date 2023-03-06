@@ -24,6 +24,7 @@
 Styling
 - `strong` - Used to bold text
 - `em` - Used to italicizse text
+
 Semantic
 - `p` - Paragraph
 - `ol` - Ordered list
