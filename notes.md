@@ -36,6 +36,7 @@ Semantic
 - `address` - An address for a location
 - `pre` - Signifies some sort of pre-formatting
 - `aside` - Sidebar comments, pullquote, gloasary, footnote, advertising, tangentially related
+- `header` - Used for header type content on web pages, title, header bar etc...
 
 Non-semantic
 - `div` - Flow content with no additional semantics
