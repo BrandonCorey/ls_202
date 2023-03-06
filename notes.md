@@ -1,3 +1,4 @@
+# HTML and CSS Notes #
 ## HTML Skeleton ##
 ```HTML
 <!DOCTYPE html>
@@ -17,6 +18,26 @@
 - `html` element encloses the entire HTML document
 - `head` element encloses document header, which contains **meta** information about the document
   - `meta` is a _self-closing element_, meaning it does not have a closing tag
+
+**Bonus elements**
+Styling
+- `strong` - Used to bold text
+- `em` - Used to italicizse text
+Semantic
+- `p` - Paragraph
+- `ol` - Ordered list
+- `ul` - Unordered list
+- `li` - list item
+- `article` - news article, weblog, forum post, comment on article etc...
+- `section` - A section of the page, a chapter of an article etc...
+- `blockquote` - A quotation of something else
+- `address` - An address for a location
+- `pre` - Signifies some sort of pre-formatting
+- `aside` - Sidebar comments, pullquote, gloasary, footnote, advertising, tangentially related
+Non-semantic
+- `div` - Flow content with no additional semantics
+Anchor
+- `a` - Used with `href` attribute to include a hyperlink e.g `<a href="https://launchschool.com">Hyper-link text goe here</a>`
 
 ## Classes, IDs, and Names ##
 These are the three ways to identify certain elements in HTML
@@ -65,5 +86,42 @@ An attribute that is used to tie **form** elements to data on the server
 ```
 ```
 When the form is submitted, the browser constructs this query string:
-first-name=Joe&last-name=Jones
+first-name=Brandon&last-name=Corey
+- Note that name `first-name` and `last-name` come from the `name` attribute
+- The `Brandon` and `Corey` become the values for these names after they are submitted
+```
+
+## CSS notes ##
+Cascading style sheets is used to style HTML
+- Organized as property-value combinations
+
+**Important properties**
+- `color` - text color
+- `background-color` - background color
+- `text-align` - left, center, right, or justify align
+- `font-size` - size of font
+- `font-family` - serif, sans serif, monospace etc... --> Can give browser multiple options in case one is not available
+- `font-style` - italic
+- `font-weight` - bold
+- `font` - A shorthand for the above equal to: `font-style font-weight font-size/line-height font-family`
+  - `font: italic bold 20px/2.5 Verdana, "Trebuchet MS", Tahoma, sans-serif;`
+  - Not all values are required, CSS will know whihc ones are which e.g `font: 16px Arial`
+
+### Ways to include CSS ###
+- Inline
+```html
+<h1 style="color: red; text-decoration: underline;">I want red underlined text!</h1>
+```
+- Internal
+```html
+<style>
+  h1 {
+    color: red;
+    text-decoration: underline;
+  }
+</style>
+```
+- External
+```html
+<head> <link rel="stylesheet" href="/filepath"> </head>
 ```
