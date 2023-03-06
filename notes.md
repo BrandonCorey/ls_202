@@ -48,6 +48,11 @@ Anchor
 Image
 - `img` - Used with `src` attribute (source) to include an image e.g `<img src="picture.jpg">`
 
+Link
+- `link` Used with `rel` (relation) and `href` attribute to link another file to HTML
+- Typically used to link a JS or CSS file e.g `<link rel="stylesheet" href="styles.css">`
+- `rel` just acts as a descriptor for what the relation of the file is to the html
+
 ## Classes, IDs, and Names ##
 These are the three ways to identify certain elements in HTML
 
