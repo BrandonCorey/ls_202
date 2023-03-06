@@ -41,9 +41,12 @@ Non-semantic
 - `div` - Flow content with no additional semantics
 
 Anchor
-- `a` - Used with `href` attribute to include a hyperlink e.g `<a href="https://launchschool.com">Hyper-link text goe here</a>`
+- `a` - Used with `href` (hyper-link reference)attribute to include a hyperlink e.g `<a href="https://launchschool.com">Hyper-link text goe here</a>`
   - Can add attribute `target="_blank"` to open the link in a new tab
   - e.g `<a href="https://launchschool.com" target="_blank">Hyper-link text goe here</a>`
+
+Image
+- `img` - Used with `src` attribute (source) to include an image e.g `<img src="picture.jpg">`
 
 ## Classes, IDs, and Names ##
 These are the three ways to identify certain elements in HTML
