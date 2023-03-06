@@ -157,6 +157,7 @@ Select every plate that directly follow a bento
 Select all plates that follow a bento
 - `plate ~ bento`
 
+```html
 <div class="table">
   <apple />
   <apple class="small" />
