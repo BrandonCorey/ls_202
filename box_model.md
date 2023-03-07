@@ -30,9 +30,15 @@ Block elements occupy all horizontal space available within their container
 - Block properties
   - `width`
   - `height`
-  - `padding`
-  - `border`
-  - `margin`
+  - `padding` --> top, bottom, right, left
+  - `border` --> width, style, color
+  - `margin` --> top, bottom, right, left
+
+**Notes about `padding`, `border`, and `margin`**
+- `padding` and `border` --> all optional values
+  - Only 1 supplied --> adds value for all 4 sides
+  - Only 2 supplied --> first applies to top/bottom, second appies left/right
+- `border` requires all 3 values of `width`, `style` (dotted, solid etc...) and `color` 
 
 **Most elements are block elements, including:**
 - `section`, `article`, `aside`, `header`, `footer`
@@ -83,7 +89,7 @@ HTML allows for nesting elements, but there are rules
 - `inline-block` can nest `inline-block` and `inline`
 - `inline` can only nest `inline`
 
-## `box-siziding` ##
+## `box-siziing` ##
 A versatile CSS property that affects how an HTML element is sized
 - `content-box` --> sizing (**Browser Default**): Size of actual `content` area
   - `width` --> visible width of rendered box (`border` and `padding` are moved inside `width`)
