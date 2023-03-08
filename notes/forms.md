@@ -24,6 +24,11 @@ Used to obtain input from the user
 - `name` is used to identify the data that is sent to the server
   - It is also submitted and what you'd use to identify the data server-side
 
+**Other attributes**
+- `required` --> makes input required
+- `disabled` --> disables input
+- `placeholder` --> can set a placeholder value e.g `placeholder="example@emai.com"`
+
 ### `radio` and `checkbox` ###
 - These are another `type` for `input` elements with additional options
 - Allow for multiple choice selection from a set of `value`s
