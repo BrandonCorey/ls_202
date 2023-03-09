@@ -96,10 +96,19 @@ These can be achieved using the `select` element
 </button>
 ```
 
+### `formAction` attribute ###
+A button has a `formaction` attribute that can be used to override the `action` attribute of the `form`
+
+
 ## Oranizing form elements ##
 Form elements should be given a preceding or wrapping `label` element
 - Should also be explicitly given an `id` attribute
-
+- Allows you to specify a different URL for the form data to be sent, as well as new method
+```pug
+<button formaction="/contacts" formmethod="get">
+  Cancel
+</button>
+```
 ### `label` element ###
 Used to describe inputs or controls that they pertain to
 - Includes a `for` attribute that should be same as `name` and `id`
