@@ -28,6 +28,7 @@ Used to obtain input from the user
 - `required` --> makes input required
 - `disabled` --> disables input
 - `placeholder` --> can set a placeholder value e.g `placeholder="example@emai.com"`
+- `value` --> will prepoluate element with value e.g `value=currentDate`
 
 ### `radio` and `checkbox` ###
 - These are another `type` for `input` elements with additional options
