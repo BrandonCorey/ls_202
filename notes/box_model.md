@@ -52,6 +52,7 @@ Block elements occupy all horizontal space available within their container
 - `ul`, `ol`, `dl`
 - `figure` and `figcaption`
 - `form` and `fieldset`
+- `div`
 
 **Note** that any element can be conveted to a block element with `display: block`
  - Its common to render `a` and `img` as blocks
@@ -68,9 +69,13 @@ Block elements occupy all horizontal space available within their container
  Browsers:
  - ignore `width` and `height` properties (except with `img`)
  - ignore top and bottom margins
+ - **Some inline elements** like `img` and `input` will ignore padding
  - **don't** ignore borders, but results may look odd
  - **don't** ignore top and bottom padding
- - **don't** ingore left and right padding and margins
+ - **don't** ignore left and right margins
+
+ **Note about changing display**
+Only some inline elements like `img` and `input` allow you to change their `display`
 
 **The following elements are `inline` by default**
 - `span`
@@ -78,6 +83,7 @@ Block elements occupy all horizontal space available within their container
 - `a`
 - `sub` and `sup`
 - `img`
+- `input`
 
 ### Inline-block elements ###
 Act like block elements, except they do _**not**_ take up an entire row when `width` is less than available width
@@ -93,7 +99,7 @@ HTML allows for nesting elements, but there are rules
 - `inline-block` can nest `inline-block` and `inline`
 - `inline` can only nest `inline`
 
-## `box-siziing` ##
+## `box-sizing` ##
 A versatile CSS property that affects how an HTML element is sized
 - `content-box` --> sizing (**Browser Default**): Size of actual `content` area
   - `width` --> visible width of rendered box (`border` and `padding` are moved inside `width`)
